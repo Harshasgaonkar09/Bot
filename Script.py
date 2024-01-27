@@ -198,22 +198,25 @@ Tɪᴘ: Sᴇʟᴇᴄᴛ "Lᴀɴɢᴜᴀɢᴇs" ᴏʀ "Sᴇᴀsᴏɴs" Bᴜᴛᴛ
 
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
-    CAPTION = """<b>📂Fɪʟᴇɴᴀᴍᴇ : {file_name}
-╔════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ════╗
-▫️<a href=https://t.me/TeamHMT_Movie> ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ </a>
-▫️<a href=https://t.me/+aLArXSwMmKlkN2Nl> ʀᴇǫᴜᴇsᴛ ᴍᴏᴠɪᴇs​ </a>
+    CAPTION = """<a href="https://t.me/Cinematic_xone"><b>{file_name}</b></a>
+
+<a href="https://t.me/Cinematic_xone"><b>🔘 Fɪʟᴇ Sɪᴢᴇ - {file_size}</b></a>
+<b>╔════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ════╗
+▫️<a href=https://t.me/theottservice>  Mᴏᴠɪᴇs Cʜᴀɴɴᴇʟ </a>
+▫️<a href=https://t.me/Cinematic_xone> Mᴏᴠɪᴇs Rᴇǫᴜᴇsᴛ Gʀᴏᴜᴘ​ </a>
+▫️<a href=https://t.me/thefilmzone9> Sᴜᴘᴘᴏʀᴛ </a>
 ╚════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ════╝</b>""" 
 
     IMDB_TEMPLATE_TXT = """
-<b>Query: {qurey}
+<b>📟 ᴛɪᴛʟᴇ</b>: <a href={url}><b>{title}</b></a>
+<b>🎭 ɢᴇɴʀᴇ</b>: <b>{genres}</b>
+<b>📅Yᴇᴀʀ</b>: <a href={url}/releaseinfo><b>{year}</b></a>
+<b>🌟 ʀᴀᴛɪɴɢ</b>: <a href={url}/ratings><b>{rating}</b></a>
+<b>🔊 ʟᴀɴɢᴜᴀɢᴇ</b> : <b>{languages}</b>
+<b>🛸 ɪɴғᴏ</b> : <b>{release_date}</b>
+<b>👩🏻‍💻 ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ</b> : <b>{message.from_user.mention}</b>
 
-IMDb Data:
-
-🏷 Title: <a href={url}>{title}</a>
-🎭 Genres: {genres}
-📆 Year: <a href={url}/releaseinfo>{year}</a>
-⏱️ Result Shown in: {remaining_seconds} <i>seconds</i> 🔥
-🌟 Rating: <a href={url}/ratings>{rating}</a> / 10</b>"""
+<blockquote><b>🍀 𝑷𝒐𝒘𝒆𝒓𝒆𝒅 𝑩𝒚🍀 : {message.chat.title} Pᴏᴘᴄᴏʀɴɪx Bᴏᴛ</blockquote></b>"""
     
     ALL_FILTERS = """
 <b>Hᴇʏ {}, Tʜᴇsᴇ ᴀʀᴇ ᴍʏ ᴛʜʀᴇᴇ ᴛʏᴘᴇs ᴏғ ғɪʟᴛᴇʀs.</b>"""
@@ -239,16 +242,11 @@ Aᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs:
     RESTART_TXT = """
 <b>Bᴏᴛ Rᴇsᴛᴀʀᴛᴇᴅ !
 
-📅 Dᴀᴛᴇ : <code>{}</code>
-⏰ Tɪᴍᴇ : <code>{}</code>
-🌐 Tɪᴍᴇᴢᴏɴᴇ : <code>Asia/Kolkata</code>
-🛠️ Bᴜɪʟᴅ Sᴛᴀᴛᴜs: <code>v2.7.1 [ Sᴛᴀʙʟᴇ ]</code></b>"""
+📅 <b>Dᴀᴛᴇ</b> : <code>{}</code>
+⏰ <b>Tɪᴍᴇ</b> : <code>{}</code>
+🌐 <b>Tɪᴍᴇᴢᴏɴᴇ</b> : <code>Asia/Kolkata</code>
+🛠️ <b>Bᴜɪʟᴅ Sᴛᴀᴛᴜs</b> : <code>v2.7.1 [ Sᴛᴀʙʟᴇ ]</code></b>"""
 
     LOGO = """
 
-████████╗████████╗  ██████╗░░█████╗░████████╗░██████╗
-╚══██╔══╝╚══██╔══╝  ██╔══██╗██╔══██╗╚══██╔══╝██╔════╝
-░░░██║░░░░░░██║░░░  ██████╦╝██║░░██║░░░██║░░░╚█████╗░
-░░░██║░░░░░░██║░░░  ██╔══██╗██║░░██║░░░██║░░░░╚═══██╗
-░░░██║░░░░░░██║░░░  ██████╦╝╚█████╔╝░░░██║░░░██████╔╝
-░░░╚═╝░░░░░░╚═╝░░░  ╚═════╝░░╚════╝░░░░╚═╝░░░╚═════╝░"""
+🇵 ᴏᴘᴄᴏʀɴɪ🇽  🇧 ᴏᴛ 🇸 ᴛᴀʀᴛᴇᴅ......🥵🥵🥵"""
